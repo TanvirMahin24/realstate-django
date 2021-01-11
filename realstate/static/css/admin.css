@@ -57,3 +57,11 @@ input[type="submit"].default:hover,
 .submit-row input.default:hover {
   background: #061122 !important;
 }
+.toggle-nav-sidebar{
+  background: #10284e;
+  color: #fff;
+}
+.toggle-nav-sidebar:hover,.toggle-nav-sidebar:focus{
+  background: #183c75;
+  color: #fff;
+}
