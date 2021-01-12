@@ -1,7 +1,20 @@
+
 .btn-secondary {
   color: #fff !important;
+  background: #01adfd !important;
+  border-color: #01adfd !important;
 }
-
+.btn-secondary:hover {
+  color: #fff !important;
+  background: #42bff8 !important;
+  border-color: #01adfd !important;
+}
+.badge-secondary{
+  background: #10284ee8 !important;
+}
+.text-secondary {
+  color: #10284e !important;
+}
 img {
   width: 100%;
 }
@@ -11,7 +24,7 @@ img {
 }
 
 .navbar {
-  opacity: 0.9;
+  opacity: 1;
   text-transform: uppercase;
 }
 
@@ -20,15 +33,18 @@ img {
 }
 
 #showcase {
-  background: url(../img/showcase.jpg) top;
+  background: url(../img/bgHome.jpg) top;
   background-position: top center;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  min-height: 650px;
   color: #fff;
-  padding-top: 6rem;
+  
+}
+#showcase .container-fluid{
+  background: rgba(0, 0, 0, .6);
+  padding: 2rem 0;
 }
 #showcase .home-search {
   min-height: 400px;
@@ -36,13 +52,8 @@ img {
   border-radius: 5px;
 }
 #showcase .overlay {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-height: 400px;
-  width: 100%;
-  background: rgba(51, 51, 51, 0.8);
+  position: relative;
+  background: #10284ebe;
 }
 
 #services {
@@ -62,7 +73,8 @@ img {
   left: 0;
   min-height: 100%;
   width: 100%;
-  background: rgba(32, 134, 107, 0.8);
+  background:#10284ed3;
+  padding: 2rem 0;
 }
 
 #showcase-inner {
@@ -82,14 +94,21 @@ img {
   left: 0;
   min-height: 100%;
   width: 100%;
-  background: rgba(32, 134, 107, 0.8);
+  background:#10284ed3;
 }
 #showcase-inner.showcase-search {
   min-height: 270px;
 }
-
-#work {
+#work{
+  background:url(../img/bgHome.jpg) ;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+#work .container-fluid {
+  background: #10284ecb;
   padding: 6rem 0;
+  
 }
 
 .listing-preview a {
@@ -97,8 +116,9 @@ img {
 }
 
 @media (max-width: 991px) {
-  #showcase {
+  #showcase .container-fluid {
     padding-top: 4rem;
+    padding-bottom: 0
   }
   #showcase h1 {
     font-size: 40px;
@@ -109,8 +129,12 @@ img {
 }
 
 @media (max-width: 768px) {
-  #showcase {
+  #showcase .container-fluid{
     padding-top: 3rem;
+    padding-bottom: 0;
+  }
+  #showcase .companyIntro{
+    padding: 3rem 0;
   }
   #showcase h1 {
     font-size: 40px;

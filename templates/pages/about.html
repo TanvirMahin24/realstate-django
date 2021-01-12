@@ -1,7 +1,6 @@
-{% extends 'base.html' %} {% load static %} 
-{% block title %} | About Us {% endblock %}
-{% block content %}
-
+{% extends 'base.html' %} {% load static %}
+<!-- prettier-ignore -->
+{% block title %} | About Us {%endblock %} {% block content %}
 
 <section id="showcase-inner" class="py-5 text-white">
   <div class="container">
@@ -54,7 +53,7 @@
         <!-- prettier-ignore -->
         {% for realtor in mvp_realtors %}
 
-        <div class="card">
+        <div class="card shadow shadow-sm">
           <img
             class="card-img-top"
             src="{{realtor.photo.url}}"
@@ -77,15 +76,17 @@
 
 <!-- Work -->
 <section id="work" class="bg-dark text-white text-center">
-  <h2 class="display-4">We Work For You</h2>
-  <h4>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem velit
-    aperiam, unde aliquid at similique!
-  </h4>
-  <hr />
-  <a href="listings.html" class="btn btn-secondary text-white btn-lg"
-    >View Our Featured Listings</a
-  >
+  <div class="container-fluid">
+    <h2 class="display-4">We Work For You</h2>
+    <h4>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem velit
+      aperiam, unde aliquid at similique!
+    </h4>
+    <hr />
+    <a href="listings.html" class="btn btn-secondary text-white btn-lg"
+      >View Our Featured Listings</a
+    >
+  </div>
 </section>
 
 <!-- Team -->

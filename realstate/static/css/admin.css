@@ -14,7 +14,7 @@ a:visited {
 }
 
 div.breadcrumbs {
-  background: #30caa0;
+  background: #01adfd;
   color: #fff;
 }
 div.breadcrumbs a {
@@ -23,22 +23,22 @@ div.breadcrumbs a {
 .module h2,
 .module caption,
 .inline-group h2 {
-  background: #30caa0;
+  background: #01adfd;
 }
 .module h2,
 .module caption,
 .inline-group h2 {
-  background: #30caa0;
+  background: #01adfd;
 }
 .selector-chosen h2 {
-  background: #30caa0 !important;
+  background: #01adfd !important;
 }
 .button,
 input[type="submit"],
 input[type="button"],
 .submit-row input,
 a.button {
-  background: #30caa0 !important;
+  background: #01adfd !important;
 }
 .button,
 input[type="submit"]:hover,
@@ -57,11 +57,13 @@ input[type="submit"].default:hover,
 .submit-row input.default:hover {
   background: #061122 !important;
 }
-.toggle-nav-sidebar{
-  background: #10284e;
-  color: #fff;
+#nav-sidebar{
+  padding-top: 15px;
+  padding-left: 5px;
 }
-.toggle-nav-sidebar:hover,.toggle-nav-sidebar:focus{
-  background: #183c75;
-  color: #fff;
+#toggle-nav-sidebar{
+  border-top: none !important;
+  border-bottom: none !important;
+  background: rgb(230, 230, 230);
+  box-shadow: 3px 3px 3px 0 #0000004b;
 }
